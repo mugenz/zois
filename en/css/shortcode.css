@@ -306,7 +306,8 @@
   margin-top: 26px;
   word-wrap: break-word;
 }
-.about-section .about-content p, .about-content li {
+.about-section .about-content p,
+.about-content li {
   font-family: "Lora", serif;
   font-size: 14px;
   color: #666;
@@ -315,6 +316,8 @@
 }
 .about-content p.emphasized {
   color: #0d1138;
+  font-size: large;
+  margin-top: 28px;
 }
 /* -- About Studio Tab */
 .about-studio-tab {
@@ -870,6 +873,9 @@
   text-transform: uppercase;
   margin-bottom: 0;
   position: relative;
+}
+.call-out .call-out-content p span {
+  margin-left: 72px;
 }
 .call-out .call-out-content p img {
   margin-right: 40px;
@@ -3097,5 +3103,8 @@
     display: block;
     padding-left: 0;
     margin-top: 5px;
+  }
+  .call-out .call-out-content p span {
+    margin-left: 6px;
   }
 }

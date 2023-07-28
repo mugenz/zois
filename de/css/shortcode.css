@@ -306,7 +306,8 @@
   margin-top: 26px;
   word-wrap: break-word;
 }
-.about-section .about-content p, .about-content li {
+.about-section .about-content p,
+.about-content li {
   font-family: "Lora", serif;
   font-size: 14px;
   color: #666;
@@ -315,6 +316,8 @@
 }
 .about-content p.emphasized {
   color: #0d1138;
+  font-size: large;
+  margin-top: 28px;
 }
 /* -- About Studio Tab */
 .about-studio-tab {
@@ -3098,4 +3101,48 @@
     padding-left: 0;
     margin-top: 5px;
   }
+  .call-out .call-out-content p span {
+    margin-left: 6px;
+  }
+}
+
+/* Define the slide-in animation */
+/* Define the slide-in animation */
+@keyframes slideInFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Apply the initial state of the animation to prevent it from running on page load */
+.animated-text.animate-l {
+  opacity: 0;
+  transform: translateX(-50%);
+}
+.animated-text.animate-r {
+  opacity: 0;
+  transform: translateX(50%);
+}
+/* Apply the slide-in animation to elements with the 'animated-text' class */
+.triggered.animate-l {
+  animation: slideInFromLeft 0.9s ease-in;
+}
+.triggered.animate-r {
+  animation: slideInFromRight 0.9s ease-in;
 }

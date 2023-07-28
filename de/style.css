@@ -1095,6 +1095,12 @@ a {
   .page-banner.interim-management.container-fluid.no-padding {
     min-height: 390px;
   }
+  .page-banner.business-consulting.container-fluid.no-padding {
+    min-height: 390px;
+  }
+  .page-banner.senior-advisor.container-fluid.no-padding {
+    min-height: 390px;
+  }
 }
 @media screen and (max-width: 1160px) {
   .page-banner.about.container-fluid.no-padding {
@@ -1141,7 +1147,7 @@ a {
     min-height: 160px;
   }
   .page-banner.business-consulting.container-fluid.no-padding {
-    min-height: 160px;
+    min-height: 150px;
   }
   .page-banner.academy.container-fluid.no-padding {
     min-height: 160px;
@@ -1150,7 +1156,7 @@ a {
     min-height: 150px;
   }
   .page-banner.senior-advisor.container-fluid.no-padding {
-    min-height: 160px;
+    min-height: 150px;
   }
   .page-banner.interim-management.container-fluid.no-padding {
     min-height: 150px;
@@ -1162,6 +1168,15 @@ a {
   }
   .page-banner.interim-management.container-fluid.no-padding {
     min-height: 100px;
+  }
+  .page-banner.business-consulting.container-fluid.no-padding {
+    min-height: 100px;
+  }
+  .page-banner.senior-advisor.container-fluid.no-padding {
+    min-height: 100px;
+  }
+  #top-bar .top-bar-content .phone {
+    font-size: small;
   }
 }
 
@@ -1249,8 +1264,8 @@ a {
   display: flex;
   flex-direction: column;
   color: #1870b9;
-  min-height: 350px;
-  width: 420px;
+  min-height: 550px;
+  max-width: 510px;
   justify-content: space-between;
   align-items: flex-start;
   padding: 0 18px;
@@ -1271,7 +1286,7 @@ a {
 .testimonial-ref {
   position: relative;
   bottom: 15px;
-  color: #212448;
+  color: #0d1138;
   font-size: 14px;
 }
 
@@ -1779,4 +1794,19 @@ ul.content-list > li {
 .faded.faded-wide.faded-all:after,
 .faded.faded-wide.faded-left.faded-top.faded-right.faded-bottom:after {
   box-shadow: inset 0 0 80px 28px;
+}
+
+/* Style for the play button */
+.popup-youtube {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  background-color: #333;
+  padding: 10px 15px;
+  border-radius: 50%;
+}
+
+/* Additional styles for the play button icon (e.g., using Font Awesome) */
+.popup-youtube i {
+  font-size: 24px;
 }
