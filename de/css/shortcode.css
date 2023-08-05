@@ -317,7 +317,19 @@
 .about-content p.emphasized {
   color: #0d1138;
   font-size: large;
-  margin-top: 28px;
+  margin-top: 62px;
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  letter-spacing: 2px;
+  margin-bottom: 18px;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+.about-content ol:not(:first-child).with-space > li {
+  margin-top: 16px;
+}
+.about-content .overall {
+  padding-top: 44px;
 }
 /* -- About Studio Tab */
 .about-studio-tab {
