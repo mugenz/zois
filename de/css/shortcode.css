@@ -309,7 +309,7 @@
 .about-section .about-content p,
 .about-content li {
   font-family: "Lora", serif;
-  font-size: 14px;
+  font-size: 15px;
   color: #666;
   letter-spacing: 0.28px;
   line-height: 26px;
@@ -569,6 +569,18 @@
   color: #1870b9;
 }
 /* -- Service Section */
+.srv-content {
+  border: 1px solid #ececec;
+}
+.srv-content-row {
+  display: flex;
+}
+.srv-content-row .col-xs-6.no-padding:first-child {
+  border-right: 1px solid #ececec;
+}
+.srv-content-row-bottom {
+  border-top: 1px solid #ececec;
+}
 .service-section .srv-img {
   background-position: center;
   background-repeat: no-repeat;
@@ -576,7 +588,7 @@
 }
 .service-section-1.service-section .srv-box {
   border-bottom: none;
-  border: 1px solid #ececec;
+  /* border: 1px solid #ececec; */
   padding: 72px 23px 72px;
   background-color: #f8f8f8;
 }
@@ -595,7 +607,7 @@
   position: relative;
 }
 .service-section-1 .srv-box::after {
-  border: 1px solid #f6f6f6;
+  /* border: 1px solid #f6f6f6; */
   bottom: 50px;
   content: "";
   display: inline-block;
@@ -885,6 +897,9 @@
   text-transform: uppercase;
   margin-bottom: 0;
   position: relative;
+}
+.call-out .call-out-content p span {
+  margin-left: 72px;
 }
 .call-out .call-out-content p img {
   margin-right: 40px;

@@ -309,7 +309,7 @@
 .about-section .about-content p,
 .about-content li {
   font-family: "Lora", serif;
-  font-size: 14px;
+  font-size: 15px;
   color: #666;
   letter-spacing: 0.28px;
   line-height: 26px;
@@ -569,6 +569,18 @@
   color: #1870b9;
 }
 /* -- Service Section */
+.srv-content {
+  border: 1px solid #ececec;
+}
+.srv-content-row {
+  display: flex;
+}
+.srv-content-row .col-xs-6.no-padding:first-child {
+  border-right: 1px solid #ececec;
+}
+.srv-content-row-bottom {
+  border-top: 1px solid #ececec;
+}
 .service-section .srv-img {
   background-position: center;
   background-repeat: no-repeat;
@@ -576,7 +588,7 @@
 }
 .service-section-1.service-section .srv-box {
   border-bottom: none;
-  border: 1px solid #ececec;
+  /* border: 1px solid #ececec; */
   padding: 72px 23px 72px;
   background-color: #f8f8f8;
 }
@@ -595,7 +607,7 @@
   position: relative;
 }
 .service-section-1 .srv-box::after {
-  border: 1px solid #f6f6f6;
+  /* border: 1px solid #f6f6f6; */
   bottom: 50px;
   content: "";
   display: inline-block;
@@ -3119,4 +3131,45 @@
   .call-out .call-out-content p span {
     margin-left: 6px;
   }
+}
+
+/* Define the slide-in animation */
+/* Define the slide-in animation */
+@keyframes slideInFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Apply the initial state of the animation to prevent it from running on page load */
+.animated-text.animate-l {
+  opacity: 0;
+  transform: translateX(-50%);
+}
+.animated-text.animate-r {
+  opacity: 0;
+  transform: translateX(50%);
+}
+/* Apply the slide-in animation to elements with the 'animated-text' class */
+.triggered.animate-l {
+  animation: slideInFromLeft 0.9s ease-in;
+}
+.triggered.animate-r {
+  animation: slideInFromRight 0.9s ease-in;
 }
