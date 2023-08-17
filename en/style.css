@@ -995,7 +995,7 @@ a {
 }
 /* ## Page Banner */
 .page-banner.about {
-  background-image: url("images/EJ-75-3.jpg");
+  background-image: url("images/EJ-75.jpg");
 }
 @media screen and (max-width: 1496px) {
   .page-banner.contact.container-fluid.no-padding {
